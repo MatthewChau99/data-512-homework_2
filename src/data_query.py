@@ -1,14 +1,22 @@
-import json, time, urllib.parse, os
+import time
 
+import pandas as pd
 import requests
 from tqdm import tqdm
-import pandas as pd
 
 from src.global_constants import GlobalConstants
 
 articles_df = pd.read_csv('politicians_by_country_SEPT.2022.csv')
 
 def request_pageinfo_per_article(article_title=None, gc=None):
+    """
+    Make a request to obtain the page info for each Wiki article.
+
+    :params article_title: the name of the article
+    :params gc: the global constants object
+
+    return: the response in dict
+    """
     if not article_title: return None
     
     if gc is None:
@@ -41,6 +49,15 @@ def request_pageinfo_per_article(article_title=None, gc=None):
 
 
 def request_ores_score_per_article(article_revid = None, gc=None, features=False):
+    """
+    Make a request to obtain the page info for each Wiki article.
+
+    :params article_revid: the latest revision id of the article
+    :params gc: the global constants object
+    :params features: added features to the request
+
+    return: the response in dict
+    """
     # Make sure we have an article revision id
     if not article_revid: 
         return None
@@ -92,16 +109,3 @@ if __name__ == '__main__':
         
         if ores is not None:
             ores_json.update(ores)
-    
-    if not os.path.exists(os.path.join(global_constants.project_root, 'data')):
-        os.mkdir('data')
-
-    with open(os.path.join(global_constants.project_root, "data", "info.json"), "w") as f:
-        json.dump(info_json, f, indent=4)
-
-    with open(os.path.join(global_constants.project_root, "data", "ores.json"), "w") as f:
-        json.dump(ores_json, f, indent=4)
-
-    with open(os.path.join(global_constants.project_root, 'data', 'error_files.txt'), "w") as f:
-        for error_file in global_constants.error_files:
-            f.write(error_file + '\n')
