@@ -36,7 +36,18 @@ To do a simple analysis, we have generated the total article per population in `
 
 ## Research Implications
 Some findings from the analysis were quite refreshing. The top 10 countries by coverage were mostly in Caribbean, Oceania, and Europe, while the bottom 10 countries by coverage were mostly in Asia. A good guess would be the huge population of China and India has a big impact of the low article-per-capita rate, as well as the African countries. The top 10 countries by high quality were mostly from Europe, while the bottom 10 were mostly from Asia and Africa, also likely to be a result of the size of the population. Moreover, the European and Oceania regions have in general total coverage and high quality coverage, in contrast to the low coverages for Asian and African regions.
-<br>
+<br><br>
 However, there are potential bias in this data that leads to amplified biases in future analysis. The amount of articles is not likely to fully represent given the language bias. Since the data source is all written in English, the number of articles in European countries is likely to be high as English is widely used in European countries. On the other hand, it is not commonly used in Asian as they all have their own languages in each of the Asian countries. Moreover, European countries could have more access to internet in general, and thus a larger number of published articles on Wikipedia. Those factors could all contribute to the amount of articles and impact on the final results.
-<br>
+<br><br>
+Also, the source Wikipedia does not fully represent the quality of articles in each country as well. Wikipedia does not have an equal popularity in different countries. There are other search engines such as Google, Bing, Baidu and Yahoo that may provide alternatives for Wikipedia, resulting in a different number of articles across countries. Thus the popularity of Wikipedia over countries and regions must be taken into account when giving conclusions.
+<br><br>
+However, the data used in this project could still be useful and appropriate in some cases. One example would be training a Q&A NLP model under the context of world politicians. In this case, the context has been limited to the world politicians and Wikipedia could be a good source as it is quite comprehensive in terms of a global scale website. The language wouldn't be a bias either as the target language is English.
 
+## License
+Copyright 2022 Matthew Chau
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
