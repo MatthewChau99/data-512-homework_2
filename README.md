@@ -34,6 +34,12 @@ To do a simple analysis, we have generated the total article per population in `
 - Geographic regions by total coverage
 - Geographic regions by high quality coverage
 
+## Files
+`src`: contains code and functions that are modularized <br>
+`homework2.ipynb`: contains a walk through of this project <br>
+`data`: contains all data files required for this project <br>
+
+
 ## Research Implications
 Some findings from the analysis were quite refreshing. The top 10 countries by coverage were mostly in Caribbean, Oceania, and Europe, while the bottom 10 countries by coverage were mostly in Asia. A good guess would be the huge population of China and India has a big impact of the low article-per-capita rate, as well as the African countries. The top 10 countries by high quality were mostly from Europe, while the bottom 10 were mostly from Asia and Africa, also likely to be a result of the size of the population. Moreover, the European and Oceania regions have in general total coverage and high quality coverage, in contrast to the low coverages for Asian and African regions.
 <br><br>
