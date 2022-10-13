@@ -14,4 +14,24 @@ To use the ORES system, short for "Objective Revision Evaluation Service", there
 3. Make a ORES request with the revision id
 The code for the above is contained in `src/data_query.py`.
 
+## Data Processing
+The data is combined to form a structured table with the below columns (stored in `data/wp_politicians_by_country.csv`):
+- **country**: the country that the politician belongs to
+- **region**: the region that the country is in
+- **continent**: the continent that the region is in
+- **population**: the population of the *country*
+- **article_title**: the name of the article
+- **revision_id**: the latest revision id of the article
+- **article_quality**: the predicted quality of the article by ORES
+- **region_population**: the population of the *region*
+
+## Data Analysis and Results
+To do a simple analysis, we have generated the total article per population in `data/clean_data/tapp.csv`, as well as the total high quality article per population in `data/clean_data/qapp.csv`. Using these two tables, we have generated the following tables in `src/homework2.ipynb`:
+- Top 10 countries by coverage
+- Bottom 10 countries by coverage
+- Top 10 countries by high quality
+- Bottom 10 countries by high quality
+- Geographic regions by total coverage
+- Geographic regions by high quality coverage
+
 
