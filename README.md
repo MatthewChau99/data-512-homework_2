@@ -34,4 +34,9 @@ To do a simple analysis, we have generated the total article per population in `
 - Geographic regions by total coverage
 - Geographic regions by high quality coverage
 
+## Research Implications
+Some findings from the analysis were quite refreshing. The top 10 countries by coverage were mostly in Caribbean, Oceania, and Europe, while the bottom 10 countries by coverage were mostly in Asia. A good guess would be the huge population of China and India has a big impact of the low article-per-capita rate, as well as the African countries. The top 10 countries by high quality were mostly from Europe, while the bottom 10 were mostly from Asia and Africa, also likely to be a result of the size of the population. Moreover, the European and Oceania regions have in general total coverage and high quality coverage, in contrast to the low coverages for Asian and African regions.
+<br>
+However, there are potential bias in this data that leads to amplified biases in future analysis. The amount of articles is not likely to fully represent given the language bias. Since the data source is all written in English, the number of articles in European countries is likely to be high as English is widely used in European countries. On the other hand, it is not commonly used in Asian as they all have their own languages in each of the Asian countries. Moreover, European countries could have more access to internet in general, and thus a larger number of published articles on Wikipedia. Those factors could all contribute to the amount of articles and impact on the final results.
+<br>
 
